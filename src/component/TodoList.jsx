@@ -9,7 +9,7 @@ const TodoList = ({ items, onDelete }) => {
       {items.map((item, index) => (
         <div key={index} className={style.taskcontainer}>
           <button className={style.deleteBtn} onClick={() => onDelete(index)}>
-            X
+          X
           </button>
           <input type="text" value={item} className={style.addBox} readOnly />
         </div>
